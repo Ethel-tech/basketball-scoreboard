@@ -1,4 +1,133 @@
 body {
+  font-family: "inter";
+  background-color: rgb(108, 0, 108);
+}
+
+.main-title {
+  margin-top: 3%;
+  letter-spacing: 5px;
+  text-align: center;
+  color: white;
+  font-size: 36pt;
+}
+
+.main-div {
+  display: flex;
+  margin-top: 2%;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.main-div-display-timer {
+  border: 3px solid white;
+  background-color: black;
+  color: greenyellow;
   font-family: "04b03";
-  background-color: fuchsia;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 64pt;
+  width: 30rem;
+  height: 12rem;
+  margin-bottom: 3rem;
+}
+.main-div-button-div {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.main-div-button-div .btn {
+  height: 3rem;
+  width: 5rem;
+  background: none;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+.main-div-container {
+  color: white;
+  width: auto;
+}
+.main-div-container .scoreboard-div {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  gap: 5rem;
+}
+.main-div-container .scoreboard-div-team {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-div-container .scoreboard-div-team .title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 24pt;
+  font-weight: 700;
+}
+.main-div-container .scoreboard-div-team .score {
+  font-family: "04b03";
+  width: 50%;
+  height: 7rem;
+  background-color: black;
+  color: yellowgreen;
+  text-align: center;
+  font-size: 48pt;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-div-container .scoreboard-div-team .btn-div {
+  display: flex;
+  width: 70%;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+.main-div-container .scoreboard-div-team .btn-div button {
+  width: 5rem;
+  height: 3rem;
+  background: none;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+}
+
+@media (min-width: 1440px) {
+  .main-div-container {
+    width: 50%;
+  }
+}
+@media (max-width: 800px) {
+  .main-title {
+    margin-top: 10%;
+    margin-bottom: -10%;
+    letter-spacing: 1px;
+    font-size: 22pt;
+  }
+  .main-div {
+    margin-top: 6rem;
+  }
+  .main-div-display-timer {
+    width: 18rem;
+    height: 10rem;
+  }
+  .scoreboard-div {
+    width: 100% !important;
+    gap: 2rem !important;
+  }
+  .scoreboard-div .score {
+    width: 70% !important;
+    height: 7rem !important;
+  }
+  .scoreboard-div .btn-div {
+    width: 100%;
+    margin-left: -25% !important;
+  }
+  .scoreboard-div button {
+    width: 2rem !important;
+    height: 2rem !important;
+  }
 }/*# sourceMappingURL=styles.css.map */
